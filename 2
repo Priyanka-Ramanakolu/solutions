@@ -1,0 +1,50 @@
+# 🛡️ Container Vulnerability Dashboard
+
+This project addresses **Problem Statement 1** from a Product Management challenge, focusing on building a solution that enables users to **identify, prioritize, and remediate** vulnerabilities in container images at scale.
+
+
+## Problem Statement
+
+> As a user, I need to understand which container images have vulnerabilities and how severe they are. If there are any critical or high vulnerabilities, I need to fix them and thus need to identify which images have to be fixed.
+
+
+##  Deliverables
+
+### 1. Product Requirement Document (PRD)
+A complete PRD outlining:
+- User personas
+- Functional & non-functional requirements
+- Core features (Dashboard, Detail View, Notifications)
+- API/backend recommendations
+- DevOps considerations
+
+See: [`docs/Product_Requirement_Summary.pdf`](docs/Product_Requirement_Summary.pdf)
+
+---
+
+### 2. Wireframes
+
+Low-fidelity wireframes for the user interface:
+- **Dashboard View** – Shows a summary of all images with filtering.
+- **Image Detail View** – Displays detailed CVEs for a selected image.
+
+See wireframes in [`wireframes/`](wireframes/)
+
+---
+
+##  Development Suggestions
+
+- Vulnerability Scanner: Trivy, Grype, or Clair
+- Backend: FastAPI or Node.js
+- Frontend: React + Redux
+- CI/CD: GitHub Actions + Docker + K8s
+- Auth: OAuth2
+
+---
+
+##  Folder Structure
+
+container-vulnerability-dashboard/
+├── wireframes/                # PNGs of dashboard and detail views
+├── docs/                      # Requirement PDF
+└── README.md                  # Project overview
